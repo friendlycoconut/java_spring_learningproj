@@ -10,4 +10,11 @@
         <constructor-arg name="dao" ref="personDao"/>
     </bean>
 
+    <bean id="testDao" class="nure.ua.spring01.dao.TestDaoSimple" >
+    </bean>
+
+    <bean id="testService" class="nure.ua.spring01.service.TestServiceImpl">
+        <constructor-arg name="dao" ref="testDao"/>
+    </bean>
+
 </beans>
